@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div id="mySelector" class="card-footer">
+            <button class="btn" onclick="myFunction()">Start password generator</button>
+        </div>
+        <div id="myDIV" style="display:none;" class="card-footer">
+            <div>
+                <div class="row mt-3">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="checkUppercase">
+                            <label class="form-check-label" for="checkUppercase">Uppercase letters</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="checkLowercase">
+                            <label class="form-check-label" for="checkLowercase">Lowercase letters</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="checkNumeric">
+                            <label class="form-check-label" for="checkNumeric">Numbers</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="checkSpecial">
+                            <label class="form-check-label" for="checkSpecial">Special characters</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <p class="instruction">Please select at least one character type.</p>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <div class="form-group">
+                            <label for="formControlRange">Choose password length</label>
+                            <input type="range" class="form-control-range" name="rangeInput" min="8" max="128" onchange="updateTextInput(this.value);">
+                            <p id="textInput">68</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+            </div>
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
