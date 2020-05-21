@@ -32,7 +32,7 @@ function getCharacterSet() {
     var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var lower = "abcdefghijklmnopqrstuvqxyz";
     var numeric = "0123456789";
-    var special = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+    var special = "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
     var charSet = "";
 
