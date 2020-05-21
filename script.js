@@ -31,6 +31,8 @@ function validateSelection() {
 
     if (!upperCheck && !lowerCheck && !numericCheck && !specialCheck) {
         document.getElementById('validator').innerHTML="Please select at least one option to create your password.";
+    } else {
+        document.getElementById('validator').innerHTML="";
     }
 
     return {upperCheck, lowerCheck, numericCheck, specialCheck};
