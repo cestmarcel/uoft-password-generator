@@ -21,13 +21,27 @@ function updateTextInput(val) {
     document.getElementById('textInput').innerHTML=val; 
 }
 
-// Create character set to randomly choose from when generating password
+// Validate that at least one selection is made, if not print error message
 
-function getCharacterSet() {
+function validateSelection() {
     var upperCheck = document.getElementById("checkUppercase").checked;
     var lowerCheck = document.getElementById("checkLowercase").checked;
     var numericCheck = document.getElementById("checkNumeric").checked;
     var specialCheck = document.getElementById("checkSpecial").checked;
+
+    if (!upperCheck && !lowerCheck && !numericCheck && !specialCheck) {
+        document.getElementById('validator').innerHTML="Please select at least one option to create your password.";
+    }
+
+    return {upperCheck, lowerCheck, numericCheck, specialCheck};
+}
+
+
+// Create character set to randomly choose from when generating password
+
+function getCharacterSet() {
+
+    var checks = validateSelection()
 
     var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var lower = "abcdefghijklmnopqrstuvqxyz";
@@ -36,16 +50,16 @@ function getCharacterSet() {
 
     var charSet = "";
 
-    if (upperCheck) {
+    if (checks.upperCheck) {
         charSet += upper;
     } 
-    if (lowerCheck) {
+    if (checks.lowerCheck) {
         charSet += lower;
     } 
-    if (numericCheck) {
+    if (checks.numericCheck) {
         charSet += numeric;
     } 
-    if (specialCheck) {
+    if (checks.specialCheck) {
         charSet += special;
     }
     
@@ -73,14 +87,19 @@ function generatePassword() {
 
 function writePassword() {
     
+    var checks = validateSelection();
     var password = generatePassword();
     
     // Generate variable so that we can print password text
     var passwordText = document.querySelector("#password");
 
-    // Assign result of generatePassword function as value of passwordText to print on card
-    passwordText.value = password;
-
+    // Assign result of generatePassword function as value of passwordText to print on card unless none of the checkboxes are checked, then return an empty string
+    if (checks.upperCheck || checks.lowerCheck || checks.numericCheck || checks.specialCheck){
+        passwordText.value = password;
+    } else if (!checks.upperCheck && !checks.lowerCheck && !checks.numericCheck && !checks.specialCheck){
+        passwordText.value = "";
+    }
+    
 }
 
 // Generate variable in order to add event listener

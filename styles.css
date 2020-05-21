@@ -92,6 +92,11 @@ header {
   cursor: pointer;
 }
 
+p#validator {
+    font-weight: bold;
+    color: hsl(360, 91%, 36%);
+}
+
 p.instruction {
     text-align: left;
     font-size: small;
