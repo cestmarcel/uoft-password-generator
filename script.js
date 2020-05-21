@@ -38,7 +38,6 @@ function validateSelection() {
     return {upperCheck, lowerCheck, numericCheck, specialCheck};
 }
 
-
 // Create character set to randomly choose from when generating password
 
 function getCharacterSet() {
