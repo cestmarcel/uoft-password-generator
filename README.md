@@ -4,6 +4,7 @@
 ### 1. The task
 
 The task was to create a web application that can be used to create secure passwords that match certain criteria.
+The application is available under: https://marcelthiemann.com/uoft-password-generator
 
 ![Screenshot of the homescreen](https://github.com/cestmarcel/uoft-password-generator/blob/master/assets/screenshots/homescreen.png)
 
