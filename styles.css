@@ -78,6 +78,7 @@ header {
 .form-check {
   display: inline-block;
   width: 40%;
+  padding: 3px;
 }
 
 .choices {
@@ -165,18 +166,14 @@ p.instruction {
   #password {
     font-size: 1rem;
   }
-}
 
-@media (max-width: 575px) {
-
-p.instruction {
-    text-align: center;
-    }
-
-}
-
-@media (max-width: 500px) {
-  .btn {
-    font-size: 0.8rem;
+  .card-footer {
+    font-size: 1rem;
   }
+
+  .form-check {
+    display: block;
+    width: 100%;
+  }
+
 }
