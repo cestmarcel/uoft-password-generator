@@ -9,7 +9,7 @@ The task was to create a web application that can be used to create secure passw
 
 ### 2. User flow
 
-By clicking the button "Generate password" on the homescreen, the user is presented with prompts for password criteria. 
+By clicking the button "Start password generator" on the homescreen, the user is presented with prompts for password criteria. 
 
 ![Screenshot of the choices](https://github.com/cestmarcel/uoft-password-generator/blob/master/assets/screenshots/choices.png)
 

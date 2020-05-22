@@ -61,10 +61,6 @@ header {
   text-align: center;
 }
 
-.card-footer .col-sm-5 {
-    text-align: left;
-}
-
 .card-footer::before {
   content: " ";
   display: block;
@@ -77,6 +73,21 @@ header {
   content: " ";
   display: block;
   clear: both;
+}
+
+.form-check {
+  display: inline-block;
+  width: 40%;
+}
+
+.choices {
+  margin-top: 30px;
+}
+
+#range {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
 }
 
 /* Button styles */
@@ -113,7 +124,6 @@ p#validator {
 
 /* Selector styles */
 p.instruction {
-    text-align: left;
     font-size: small;
 }
 
@@ -158,9 +168,6 @@ p.instruction {
 }
 
 @media (max-width: 575px) {
-.card-footer .col-sm-5 {
-    text-align: center;
-    }
 
 p.instruction {
     text-align: center;
