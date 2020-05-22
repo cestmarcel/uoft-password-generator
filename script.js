@@ -42,7 +42,7 @@ function validateSelection() {
 
 function getCharacterSet() {
 
-    var checks = validateSelection()
+    var checks = validateSelection();
 
     var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var lower = "abcdefghijklmnopqrstuvqxyz";
