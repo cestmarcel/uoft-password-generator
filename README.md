@@ -27,4 +27,4 @@ For better accessiblity, the code in the core html, css, and javascript files is
 
 ### 4. External APIs, Libraries, and Frameworks 
 
-No external APIs, Libraries, and Framworks have been used to develop this application. UofT provided a basic html file, a css file containing styling as well as a barebone Javascript file to work into.
+No external APIs, Libraries, and Framworks have been used to develop this application. UofT provided a basic html file, a css file containing styling as well as a basic Javascript file to work into.
