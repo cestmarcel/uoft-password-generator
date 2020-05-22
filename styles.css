@@ -1,5 +1,4 @@
 /* Document styles */
-
 *,
 *::before,
 *::after {
@@ -26,7 +25,6 @@ body {
 }
 
 /* Header styles */
-
 header {
   text-align: center;
   padding: 20px;
@@ -35,7 +33,6 @@ header {
 }
 
 /* Card styles (main content) */
-
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -83,7 +80,6 @@ header {
 }
 
 /* Button styles */
-
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -110,21 +106,18 @@ button[disabled] {
 }
 
 /* Error message styles */
-
 p#validator {
     font-weight: bold;
     color: hsl(360, 91%, 36%);
 }
 
 /* Selector styles */
-
 p.instruction {
     text-align: left;
     font-size: small;
 }
 
 /* Password box styles */
-
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -147,13 +140,11 @@ p.instruction {
 }
 
 /* Style to initially not show selectors */
-
 #myDIV {
     display: none;
 }
 
 /* Media queries */
-
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;

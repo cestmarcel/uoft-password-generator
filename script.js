@@ -1,5 +1,4 @@
 // Expand password options on click
-
 function myFunction() {
     var x = document.getElementById("myDIV");
     if (x.style.display === "block") {
@@ -10,19 +9,17 @@ function myFunction() {
     var y = document.getElementById("mySelector");
     if (y.style.display === "none") {
         y.style.display = "block";
-      } else {
+    } else {
         y.style.display = "none";
-      }
-  }
+    }
+}
 
 // Display selection of range slider underneath slider
-
 function updateTextInput(val) {
     document.getElementById('textInput').innerHTML=val; 
 }
 
 // Validate that at least one selection is made, if not print error message
-
 function validateSelection() {
     var upperCheck = document.getElementById("checkUppercase").checked;
     var lowerCheck = document.getElementById("checkLowercase").checked;
@@ -39,16 +36,12 @@ function validateSelection() {
 }
 
 // Create character set to randomly choose from when generating password
-
 function getCharacterSet() {
-
     var checks = validateSelection();
-
     var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var lower = "abcdefghijklmnopqrstuvqxyz";
     var numeric = "0123456789";
     var special = "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-
     var charSet = "";
 
     if (checks.upperCheck) {
@@ -68,13 +61,10 @@ function getCharacterSet() {
 }
 
 // Write logic for password generation
-
 function generatePassword() {
-
     var charSet = getCharacterSet();
     var lengthString = document.getElementById("range").value;
     var generatedPassword = "";
-
     var length = parseInt(lengthString);
 
     for (i = 0; i < length; i++) {
@@ -85,12 +75,9 @@ function generatePassword() {
 }
 
 // Write password to the #password input
-
 function writePassword() {
-    
     var checks = validateSelection();
     var password = generatePassword();
-    
     // Generate variable so that we can print password text
     var passwordText = document.querySelector("#password");
 
@@ -100,13 +87,10 @@ function writePassword() {
     } else if (!checks.upperCheck && !checks.lowerCheck && !checks.numericCheck && !checks.specialCheck){
         passwordText.value = "";
     }
-    
 }
 
 // Generate variable in order to add event listener
-
 var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button to execute writePassword function on click
-
 generateBtn.addEventListener("click", writePassword);
