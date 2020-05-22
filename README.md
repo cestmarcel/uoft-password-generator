@@ -27,6 +27,4 @@ For better accessiblity, the code in the core html, css, and javascript files is
 
 ### 4. External APIs, Libraries, and Frameworks 
 
-The only external library used for this project is Bootstrap (https://getbootstrap.com) to help with responsive elements and styles. The full Bootstrap documentation can be found under https://getbootstrap.com/docs/4.5/getting-started/introduction/
-
-No other external APIs, Libraries, and Framworks have been used to develop this application. UofT provided a basic html file, a css file containing styling as well as a barebone Javascript file to work into.
+No external APIs, Libraries, and Framworks have been used to develop this application. UofT provided a basic html file, a css file containing styling as well as a barebone Javascript file to work into.
