@@ -14,7 +14,7 @@ body,
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
   background-color: #f9fbfd;
 }
 
@@ -30,6 +30,18 @@ header {
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
+}
+
+.navbar {
+  background-color: #2C4251;
+}
+
+.navbar-brand.h1 {
+  color: #FF784F;
+}
+
+.navbar-brand {
+  color: white;
 }
 
 /* Card styles (main content) */
@@ -57,8 +69,13 @@ header {
   min-height: 100px;
 }
 
+.card-header {
+  background-color: white;
+}
+
 .card-footer {
   text-align: center;
+  background-color: white;
 }
 
 .card-footer::before {
@@ -94,7 +111,7 @@ header {
 /* Button styles */
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: #FF784F;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
